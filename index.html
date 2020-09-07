@@ -3,21 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Is this game any good?</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
 
 </head>
 <body>
-    <div class="container">
-        <h1>Is this game $#!7?</h1>
+    <div class="jumbotron jumbotron-fluid">
+        <h1 id="mainTitle">Is this game any good?</h1>
 
         <form id="gameForm">
             <input type="text" id="gameTitle" placeholder ="Game title">
-            <button type="submit" id="searchBtn" class="btn">Check if the game is $#I7</button>
+            <button type="submit" id="searchBtn" class="btn btn-dark">Search for game</button>
         </form>
+    </div>
         <div class="verdict">
             <br>
-            <h1 id="name"></h1>
+            <h1 id="gameName"></h1>
             <br>
             <img id="gameImage" src="https://www.mariowiki.com/images/thumb/4/48/Question_Block_Artwork_-_Super_Mario_3D_World.png/649px-Question_Block_Artwork_-_Super_Mario_3D_World.png">
             <br>
@@ -25,9 +27,8 @@
             <br>
             <br>
             <br>
+            <p id="credit">Built with <a href="https://rawg.io/apidocs">RAWG Video Games Database API</a></p>
         </div>
-        <p>Built with <a href="https://rawg.io/apidocs">RAWG Video Games Database API</a></p>
-    </div>
     <script src="index.js"></script>
 </body>
 </html>

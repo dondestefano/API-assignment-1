@@ -1,7 +1,7 @@
 const gameTitleInput = document.getElementById("gameTitle");
 const searchBtn = document.getElementById("searchBtn");
 const verdict = document.getElementById("verdict");
-const name = document.getElementById("name");
+const name = document.getElementById("gameName");
 const gameImage = document.getElementById("gameImage");
 const url = "https://rawg.io/api/games?search=";
 
@@ -28,11 +28,11 @@ async function getGame(){
 }
 
 function evaluateGame(gameData) {
-    const noData = "We couldn't find a rating for this $#!7."
-    const bad = "This game is $#!7.";
-    const ok = "This game might be $#!7.";
-    const good = "This game is not $#!7.";
-    const great = "This game is good $#!7.";
+    const noData = "We couldn't find a rating for this game."
+    const bad = "This game is bad.";
+    const ok = "This game might be bad.";
+    const good = "This game is good.";
+    const great = "This game is great!";
 
     const score = gameData.results[0].metacritic;
 
@@ -58,6 +58,6 @@ function evaluateGame(gameData) {
 
     else if (score === null) {
         verdict.innerHTML = noData
-        verdict.style.color = "black";
+        verdict.style.color = "white";
     }
 }

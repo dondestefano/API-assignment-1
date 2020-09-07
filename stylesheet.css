@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+}
+
+.jumbotron {
+    background-color: chocolate;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.verdict {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#mainTitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+#gameName {
+    color: chocolate;
+}
+
+#gameImage {
+    width: 600px;
+}
+
+#credit {
+    display: block;
+    margin: auto;
+}
